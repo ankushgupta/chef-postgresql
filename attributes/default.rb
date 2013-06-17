@@ -89,7 +89,7 @@ when "amazon"
 
 when "redhat", "centos", "scientific", "oracle"
 
-  default['postgresql']['version'] = "8.4"
+  default['postgresql']['version'] = "9.2"
   default['postgresql']['dir'] = "/var/lib/pgsql/data"
 
   if node['platform_version'].to_f >= 6.0
